@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B536E3821D6E587300BDFBEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3811D6E587300BDFBEF /* AppDelegate.swift */; };
+		B536E3841D6E587300BDFBEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3831D6E587300BDFBEF /* ViewController.swift */; };
+		B536E3871D6E587300BDFBEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B536E3851D6E587300BDFBEF /* Main.storyboard */; };
+		B536E3891D6E587300BDFBEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B536E3881D6E587300BDFBEF /* Assets.xcassets */; };
+		B536E38C1D6E587300BDFBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B536E38A1D6E587300BDFBEF /* LaunchScreen.storyboard */; };
+		B536E3971D6E587300BDFBEF /* MarrowselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3961D6E587300BDFBEF /* MarrowselTests.swift */; };
+		B536E3A21D6E587300BDFBEF /* MarrowselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3A11D6E587300BDFBEF /* MarrowselUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B536E3931D6E587300BDFBEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B536E3761D6E587200BDFBEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B536E37D1D6E587300BDFBEF;
+			remoteInfo = Marrowsel;
+		};
+		B536E39E1D6E587300BDFBEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B536E3761D6E587200BDFBEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B536E37D1D6E587300BDFBEF;
+			remoteInfo = Marrowsel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B536E37E1D6E587300BDFBEF /* Marrowsel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marrowsel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B536E3811D6E587300BDFBEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B536E3831D6E587300BDFBEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B536E3861D6E587300BDFBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B536E3881D6E587300BDFBEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B536E38B1D6E587300BDFBEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B536E38D1D6E587300BDFBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B536E3921D6E587300BDFBEF /* MarrowselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarrowselTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B536E3961D6E587300BDFBEF /* MarrowselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarrowselTests.swift; sourceTree = "<group>"; };
+		B536E3981D6E587300BDFBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B536E39D1D6E587300BDFBEF /* MarrowselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarrowselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B536E3A11D6E587300BDFBEF /* MarrowselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarrowselUITests.swift; sourceTree = "<group>"; };
+		B536E3A31D6E587300BDFBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B536E37B1D6E587300BDFBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B536E38F1D6E587300BDFBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B536E39A1D6E587300BDFBEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B536E3751D6E587200BDFBEF = {
+			isa = PBXGroup;
+			children = (
+				B536E3801D6E587300BDFBEF /* Marrowsel */,
+				B536E3951D6E587300BDFBEF /* MarrowselTests */,
+				B536E3A01D6E587300BDFBEF /* MarrowselUITests */,
+				B536E37F1D6E587300BDFBEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B536E37F1D6E587300BDFBEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B536E37E1D6E587300BDFBEF /* Marrowsel.app */,
+				B536E3921D6E587300BDFBEF /* MarrowselTests.xctest */,
+				B536E39D1D6E587300BDFBEF /* MarrowselUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B536E3801D6E587300BDFBEF /* Marrowsel */ = {
+			isa = PBXGroup;
+			children = (
+				B536E3811D6E587300BDFBEF /* AppDelegate.swift */,
+				B536E3831D6E587300BDFBEF /* ViewController.swift */,
+				B536E3851D6E587300BDFBEF /* Main.storyboard */,
+				B536E3881D6E587300BDFBEF /* Assets.xcassets */,
+				B536E38A1D6E587300BDFBEF /* LaunchScreen.storyboard */,
+				B536E38D1D6E587300BDFBEF /* Info.plist */,
+			);
+			path = Marrowsel;
+			sourceTree = "<group>";
+		};
+		B536E3951D6E587300BDFBEF /* MarrowselTests */ = {
+			isa = PBXGroup;
+			children = (
+				B536E3961D6E587300BDFBEF /* MarrowselTests.swift */,
+				B536E3981D6E587300BDFBEF /* Info.plist */,
+			);
+			path = MarrowselTests;
+			sourceTree = "<group>";
+		};
+		B536E3A01D6E587300BDFBEF /* MarrowselUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B536E3A11D6E587300BDFBEF /* MarrowselUITests.swift */,
+				B536E3A31D6E587300BDFBEF /* Info.plist */,
+			);
+			path = MarrowselUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B536E37D1D6E587300BDFBEF /* Marrowsel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B536E3A61D6E587300BDFBEF /* Build configuration list for PBXNativeTarget "Marrowsel" */;
+			buildPhases = (
+				B536E37A1D6E587300BDFBEF /* Sources */,
+				B536E37B1D6E587300BDFBEF /* Frameworks */,
+				B536E37C1D6E587300BDFBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marrowsel;
+			productName = Marrowsel;
+			productReference = B536E37E1D6E587300BDFBEF /* Marrowsel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B536E3911D6E587300BDFBEF /* MarrowselTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B536E3A91D6E587300BDFBEF /* Build configuration list for PBXNativeTarget "MarrowselTests" */;
+			buildPhases = (
+				B536E38E1D6E587300BDFBEF /* Sources */,
+				B536E38F1D6E587300BDFBEF /* Frameworks */,
+				B536E3901D6E587300BDFBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B536E3941D6E587300BDFBEF /* PBXTargetDependency */,
+			);
+			name = MarrowselTests;
+			productName = MarrowselTests;
+			productReference = B536E3921D6E587300BDFBEF /* MarrowselTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B536E39C1D6E587300BDFBEF /* MarrowselUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B536E3AC1D6E587300BDFBEF /* Build configuration list for PBXNativeTarget "MarrowselUITests" */;
+			buildPhases = (
+				B536E3991D6E587300BDFBEF /* Sources */,
+				B536E39A1D6E587300BDFBEF /* Frameworks */,
+				B536E39B1D6E587300BDFBEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B536E39F1D6E587300BDFBEF /* PBXTargetDependency */,
+			);
+			name = MarrowselUITests;
+			productName = MarrowselUITests;
+			productReference = B536E39D1D6E587300BDFBEF /* MarrowselUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B536E3761D6E587200BDFBEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Hill, Cameron";
+				TargetAttributes = {
+					B536E37D1D6E587300BDFBEF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D7Q7SPS6QM;
+					};
+					B536E3911D6E587300BDFBEF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D7Q7SPS6QM;
+						TestTargetID = B536E37D1D6E587300BDFBEF;
+					};
+					B536E39C1D6E587300BDFBEF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = D7Q7SPS6QM;
+						TestTargetID = B536E37D1D6E587300BDFBEF;
+					};
+				};
+			};
+			buildConfigurationList = B536E3791D6E587200BDFBEF /* Build configuration list for PBXProject "Marrowsel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B536E3751D6E587200BDFBEF;
+			productRefGroup = B536E37F1D6E587300BDFBEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B536E37D1D6E587300BDFBEF /* Marrowsel */,
+				B536E3911D6E587300BDFBEF /* MarrowselTests */,
+				B536E39C1D6E587300BDFBEF /* MarrowselUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B536E37C1D6E587300BDFBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B536E38C1D6E587300BDFBEF /* LaunchScreen.storyboard in Resources */,
+				B536E3891D6E587300BDFBEF /* Assets.xcassets in Resources */,
+				B536E3871D6E587300BDFBEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B536E3901D6E587300BDFBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B536E39B1D6E587300BDFBEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B536E37A1D6E587300BDFBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B536E3841D6E587300BDFBEF /* ViewController.swift in Sources */,
+				B536E3821D6E587300BDFBEF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B536E38E1D6E587300BDFBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B536E3971D6E587300BDFBEF /* MarrowselTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B536E3991D6E587300BDFBEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B536E3A21D6E587300BDFBEF /* MarrowselUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B536E3941D6E587300BDFBEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B536E37D1D6E587300BDFBEF /* Marrowsel */;
+			targetProxy = B536E3931D6E587300BDFBEF /* PBXContainerItemProxy */;
+		};
+		B536E39F1D6E587300BDFBEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B536E37D1D6E587300BDFBEF /* Marrowsel */;
+			targetProxy = B536E39E1D6E587300BDFBEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B536E3851D6E587300BDFBEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B536E3861D6E587300BDFBEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B536E38A1D6E587300BDFBEF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B536E38B1D6E587300BDFBEF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B536E3A41D6E587300BDFBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B536E3A51D6E587300BDFBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B536E3A71D6E587300BDFBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marrowsel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.camkhill.Marrowsel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B536E3A81D6E587300BDFBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marrowsel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.camkhill.Marrowsel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B536E3AA1D6E587300BDFBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarrowselTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.camkhill.MarrowselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marrowsel.app/Marrowsel";
+			};
+			name = Debug;
+		};
+		B536E3AB1D6E587300BDFBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarrowselTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.camkhill.MarrowselTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Marrowsel.app/Marrowsel";
+			};
+			name = Release;
+		};
+		B536E3AD1D6E587300BDFBEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MarrowselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.camkhill.MarrowselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Marrowsel;
+			};
+			name = Debug;
+		};
+		B536E3AE1D6E587300BDFBEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MarrowselUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.camkhill.MarrowselUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Marrowsel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B536E3791D6E587200BDFBEF /* Build configuration list for PBXProject "Marrowsel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B536E3A41D6E587300BDFBEF /* Debug */,
+				B536E3A51D6E587300BDFBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B536E3A61D6E587300BDFBEF /* Build configuration list for PBXNativeTarget "Marrowsel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B536E3A71D6E587300BDFBEF /* Debug */,
+				B536E3A81D6E587300BDFBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B536E3A91D6E587300BDFBEF /* Build configuration list for PBXNativeTarget "MarrowselTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B536E3AA1D6E587300BDFBEF /* Debug */,
+				B536E3AB1D6E587300BDFBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B536E3AC1D6E587300BDFBEF /* Build configuration list for PBXNativeTarget "MarrowselUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B536E3AD1D6E587300BDFBEF /* Debug */,
+				B536E3AE1D6E587300BDFBEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B536E3761D6E587200BDFBEF /* Project object */;
+}
