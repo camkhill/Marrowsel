@@ -14,6 +14,9 @@
 		B536E38C1D6E587300BDFBEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B536E38A1D6E587300BDFBEF /* LaunchScreen.storyboard */; };
 		B536E3971D6E587300BDFBEF /* MarrowselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3961D6E587300BDFBEF /* MarrowselTests.swift */; };
 		B536E3A21D6E587300BDFBEF /* MarrowselUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3A11D6E587300BDFBEF /* MarrowselUITests.swift */; };
+		B536E3B01D6E5AFD00BDFBEF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3AF1D6E5AFD00BDFBEF /* Common.swift */; };
+		B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */; };
+		B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		B536E39D1D6E587300BDFBEF /* MarrowselUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarrowselUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B536E3A11D6E587300BDFBEF /* MarrowselUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarrowselUITests.swift; sourceTree = "<group>"; };
 		B536E3A31D6E587300BDFBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B536E3AF1D6E5AFD00BDFBEF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,7 @@
 		B536E3751D6E587200BDFBEF = {
 			isa = PBXGroup;
 			children = (
+				B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */,
 				B536E3801D6E587300BDFBEF /* Marrowsel */,
 				B536E3951D6E587300BDFBEF /* MarrowselTests */,
 				B536E3A01D6E587300BDFBEF /* MarrowselUITests */,
@@ -98,10 +105,12 @@
 			isa = PBXGroup;
 			children = (
 				B536E3811D6E587300BDFBEF /* AppDelegate.swift */,
+				B536E3AF1D6E5AFD00BDFBEF /* Common.swift */,
 				B536E3831D6E587300BDFBEF /* ViewController.swift */,
 				B536E3851D6E587300BDFBEF /* Main.storyboard */,
 				B536E3881D6E587300BDFBEF /* Assets.xcassets */,
 				B536E38A1D6E587300BDFBEF /* LaunchScreen.storyboard */,
+				B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */,
 				B536E38D1D6E587300BDFBEF /* Info.plist */,
 			);
 			path = Marrowsel;
@@ -260,7 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B536E3841D6E587300BDFBEF /* ViewController.swift in Sources */,
+				B536E3B01D6E5AFD00BDFBEF /* Common.swift in Sources */,
 				B536E3821D6E587300BDFBEF /* AppDelegate.swift in Sources */,
+				B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */,
+				B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
