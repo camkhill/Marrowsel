@@ -18,6 +18,7 @@
 		B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */; };
 		B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */; };
 		B536E3B61D6E8FD800BDFBEF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */; };
+		B536E3B81D6FB1B200BDFBEF /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		B536E3751D6E587200BDFBEF = {
 			isa = PBXGroup;
 			children = (
+				B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */,
 				B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */,
 				B536E3801D6E587300BDFBEF /* Marrowsel */,
 				B536E3951D6E587300BDFBEF /* MarrowselTests */,
@@ -275,6 +278,7 @@
 				B536E3B01D6E5AFD00BDFBEF /* Common.swift in Sources */,
 				B536E3821D6E587300BDFBEF /* AppDelegate.swift in Sources */,
 				B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */,
+				B536E3B81D6FB1B200BDFBEF /* TimelineViewController.swift in Sources */,
 				B536E3B61D6E8FD800BDFBEF /* TutorialViewController.swift in Sources */,
 				B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */,
 			);

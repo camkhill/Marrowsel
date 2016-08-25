@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         buttonOffset = -100
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIKeyboardWillShowNotification, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIKeyboardWillHideNotification, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIKeyboardWillHideNotification, object: nil)
         
     }
 
@@ -54,7 +54,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         buttonParentView.frame.origin.y = buttonInitialY
         
         //TODO this doesnt seem to go back
-        //loginScrollView.setContentOffset(CGPointMake(0, 0), animated: true)
+        loginScrollView.setContentOffset(CGPointMake(0, 0), animated: true)
     }
     
     @IBAction func didTapOutside(sender: AnyObject) {
@@ -124,6 +124,8 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         let emailAlertController = UIAlertController(title: "Sign-in Error", message: "Email and password combination are incorrect. Please try again", preferredStyle: .Alert)
         
         let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+            self.emailTextField.text?.removeAll()
+            self.passwordTextField.text?.removeAll()
         }
         
         emailAlertController.addAction(cancelAction)
