@@ -111,7 +111,7 @@
                                                 <rect key="frame" x="26" y="161" width="269" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -124,10 +124,6 @@
                                                 <rect key="frame" x="0.0" y="24" width="320" height="104"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="MOw-8k-8lO">
-                                                <rect key="frame" x="150" y="56" width="20" height="20"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </activityIndicatorView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zvW-Gq-zys">
                                                 <rect key="frame" x="18" y="36" width="283" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -135,6 +131,10 @@
                                                     <action selector="onTapSignIn:" destination="oAt-sk-qCg" eventType="touchUpInside" id="hu5-wU-sJN"/>
                                                 </connections>
                                             </button>
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="MOw-8k-8lO">
+                                                <rect key="frame" x="151" y="56" width="20" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </activityIndicatorView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -158,6 +158,8 @@
                         <outlet property="fieldParentView" destination="hNn-im-Q2Y" id="zml-XT-Sgp"/>
                         <outlet property="loginScrollView" destination="OfG-qG-EQP" id="prq-QI-62K"/>
                         <outlet property="passwordTextField" destination="JKw-91-8LD" id="57Z-oD-Kbr"/>
+                        <outlet property="signinActivityIndicator" destination="MOw-8k-8lO" id="TTj-vV-lSC"/>
+                        <segue destination="sM3-zl-5S6" kind="modal" identifier="signinSegue" id="4r5-dR-qnS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wh-EE-Krs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,19 +171,83 @@
             </objects>
             <point key="canvasLocation" x="1430" y="690"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial View Controller-->
         <scene sceneID="3Vu-yx-U0C">
             <objects>
-                <viewController id="sM3-zl-5S6" sceneMemberID="viewController">
+                <viewController id="sM3-zl-5S6" customClass="TutorialViewController" customModule="Marrowsel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kNB-qE-aky">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="9Rc-dI-3ug">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="1CC-D8-aeY">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome3" id="erh-P3-Tn3">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome4" id="m5i-YR-6cg">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome2" id="Ia3-57-fix">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="backup_button" id="PA4-MU-Nck">
+                                <rect key="frame" x="0.0" y="460" width="320" height="97"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tTS-R7-sIX">
+                                <rect key="frame" x="20" y="503" width="279" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="7Xb-fI-1gn" kind="modal" id="TGq-uE-ENo"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1280" height="568"/>
+                    <connections>
+                        <outlet property="spinButton" destination="PA4-MU-Nck" id="gqQ-WO-Hmp"/>
+                        <outlet property="spinImageView" destination="PA4-MU-Nck" id="Jl8-LP-rAM"/>
+                        <outlet property="takeCarouselButton" destination="tTS-R7-sIX" id="Ihg-yY-oEN"/>
+                        <outlet property="tutorialScrollView" destination="9Rc-dI-3ug" id="BRu-wf-dyc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KoN-Vb-49J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1939" y="511"/>
+            <point key="canvasLocation" x="2407" y="311"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="khV-cA-Zwt">
+            <objects>
+                <viewController id="QSx-vs-6sx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oMd-M4-R3O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed" id="LAG-Px-c1x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1564"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3NY-M8-bio"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="STd-9Q-ISy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3438" y="1088"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3J4-cg-aci">
@@ -201,8 +267,28 @@
             </objects>
             <point key="canvasLocation" x="418" y="690"/>
         </scene>
+        <!--Timeline Navigation Controller-->
+        <scene sceneID="xg2-Nv-D7U">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Xb-fI-1gn" userLabel="Timeline Navigation Controller" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Mg-z8-fUw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QSx-vs-6sx" kind="relationship" relationship="rootViewController" id="aGA-Xc-u1i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o1g-kc-cWx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2906" y="1088"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="backup_button" width="320" height="97"/>
+        <image name="feed" width="320" height="1564"/>
         <image name="intro" width="320" height="1136"/>
         <image name="intro_tile1" width="153" height="152"/>
         <image name="intro_tile2" width="76" height="75"/>
@@ -214,5 +300,9 @@
         <image name="login_text" width="320" height="70"/>
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
+        <image name="welcome1" width="320" height="568"/>
+        <image name="welcome2" width="320" height="568"/>
+        <image name="welcome3" width="320" height="568"/>
+        <image name="welcome4" width="320" height="568"/>
     </resources>
 </document>

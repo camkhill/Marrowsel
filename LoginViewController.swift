@@ -15,6 +15,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var fieldParentView: UIView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var signinActivityIndicator: UIActivityIndicatorView!
     
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
@@ -63,30 +64,73 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     
     @IBAction func onTapSignIn(sender: AnyObject) {
         
+        
         if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty {
+            
             if emailTextField.text!.isEmpty {
-                //Alert email req
-                let emailAlertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
-                
-                let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
-                }
-                
-                emailAlertController.addAction(cancelAction)
-                
-                //Display Alert
-                presentViewController(emailAlertController, animated: true, completion: {})
-                
+                displayEmailAlert()
             } else {
-                //PW req
+                displayPasswordAlert()
             }
+        } else {
+            
+            self.signinActivityIndicator.startAnimating()
+            
+            delay(2, closure: {
+                
+                self.signinActivityIndicator.stopAnimating()
+                
+                if (self.emailTextField.text == "abc" && self.passwordTextField.text == "1234") {
+                    self.performSegueWithIdentifier("signinSegue", sender: self)
+                } else {
+                    self.displayBadLoginAlert()
+                }
+            
+            
+            })
+            
         }
         
         
     }
     
+
+    func displayEmailAlert() {
+        let emailAlertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+        }
+        
+        emailAlertController.addAction(cancelAction)
+        
+        //Display Alert
+        presentViewController(emailAlertController, animated: true, completion: {})
+    }
+    
+    func displayPasswordAlert() {
+        let emailAlertController = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+        }
+        
+        emailAlertController.addAction(cancelAction)
+        
+        //Display Alert
+        presentViewController(emailAlertController, animated: true, completion: {})
+    }
     
     
-    
+    func displayBadLoginAlert() {
+        let emailAlertController = UIAlertController(title: "Sign-in Error", message: "Email and password combination are incorrect. Please try again", preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "OK", style: .Cancel) { (action) in
+        }
+        
+        emailAlertController.addAction(cancelAction)
+        
+        //Display Alert
+        presentViewController(emailAlertController, animated: true, completion: {})
+    }
     
     
     

@@ -17,6 +17,7 @@
 		B536E3B01D6E5AFD00BDFBEF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3AF1D6E5AFD00BDFBEF /* Common.swift */; };
 		B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */; };
 		B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */; };
+		B536E3B61D6E8FD800BDFBEF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B536E3AF1D6E5AFD00BDFBEF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				B536E3AF1D6E5AFD00BDFBEF /* Common.swift */,
 				B536E3831D6E587300BDFBEF /* ViewController.swift */,
 				B536E3851D6E587300BDFBEF /* Main.storyboard */,
+				B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */,
 				B536E3881D6E587300BDFBEF /* Assets.xcassets */,
 				B536E38A1D6E587300BDFBEF /* LaunchScreen.storyboard */,
 				B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */,
@@ -272,6 +275,7 @@
 				B536E3B01D6E5AFD00BDFBEF /* Common.swift in Sources */,
 				B536E3821D6E587300BDFBEF /* AppDelegate.swift in Sources */,
 				B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */,
+				B536E3B61D6E8FD800BDFBEF /* TutorialViewController.swift in Sources */,
 				B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
