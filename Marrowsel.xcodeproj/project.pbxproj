@@ -19,6 +19,8 @@
 		B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */; };
 		B536E3B61D6E8FD800BDFBEF /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */; };
 		B536E3B81D6FB1B200BDFBEF /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */; };
+		B536E3BA1D6FD98F00BDFBEF /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3B91D6FD98F00BDFBEF /* ConversationsViewController.swift */; };
+		B536E3BC1D70CFF900BDFBEF /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B536E3BB1D70CFF900BDFBEF /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +56,11 @@
 		B536E3A31D6E587300BDFBEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B536E3AF1D6E5AFD00BDFBEF /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		B536E3B11D6E5B1600BDFBEF /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
-		B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		B536E3B51D6E8FD800BDFBEF /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimelineViewController.swift; path = ../TimelineViewController.swift; sourceTree = "<group>"; };
+		B536E3B91D6FD98F00BDFBEF /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConversationsViewController.swift; path = ../ConversationsViewController.swift; sourceTree = "<group>"; };
+		B536E3BB1D70CFF900BDFBEF /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +91,6 @@
 		B536E3751D6E587200BDFBEF = {
 			isa = PBXGroup;
 			children = (
-				B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */,
-				B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */,
 				B536E3801D6E587300BDFBEF /* Marrowsel */,
 				B536E3951D6E587300BDFBEF /* MarrowselTests */,
 				B536E3A01D6E587300BDFBEF /* MarrowselUITests */,
@@ -109,6 +111,10 @@
 		B536E3801D6E587300BDFBEF /* Marrowsel */ = {
 			isa = PBXGroup;
 			children = (
+				B536E3BB1D70CFF900BDFBEF /* SettingsViewController.swift */,
+				B536E3B31D6E5ECD00BDFBEF /* LoginViewController.swift */,
+				B536E3B71D6FB1B200BDFBEF /* TimelineViewController.swift */,
+				B536E3B91D6FD98F00BDFBEF /* ConversationsViewController.swift */,
 				B536E3811D6E587300BDFBEF /* AppDelegate.swift */,
 				B536E3AF1D6E5AFD00BDFBEF /* Common.swift */,
 				B536E3831D6E587300BDFBEF /* ViewController.swift */,
@@ -277,10 +283,12 @@
 				B536E3841D6E587300BDFBEF /* ViewController.swift in Sources */,
 				B536E3B01D6E5AFD00BDFBEF /* Common.swift in Sources */,
 				B536E3821D6E587300BDFBEF /* AppDelegate.swift in Sources */,
+				B536E3BA1D6FD98F00BDFBEF /* ConversationsViewController.swift in Sources */,
 				B536E3B41D6E5ECD00BDFBEF /* LoginViewController.swift in Sources */,
 				B536E3B81D6FB1B200BDFBEF /* TimelineViewController.swift in Sources */,
 				B536E3B61D6E8FD800BDFBEF /* TutorialViewController.swift in Sources */,
 				B536E3B21D6E5B1600BDFBEF /* IntroViewController.swift in Sources */,
+				B536E3BC1D70CFF900BDFBEF /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
