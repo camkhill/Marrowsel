@@ -212,12 +212,20 @@
                                     <segue destination="7Xb-fI-1gn" kind="modal" id="TGq-uE-ENo"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" id="JTb-j9-mZ0">
+                                <rect key="frame" x="140" y="509" width="39" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" red="0.19800499081611633" green="0.61628425121307373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="1280" height="568"/>
                     <connections>
+                        <outlet property="pageControl" destination="JTb-j9-mZ0" id="LT0-Zq-dGa"/>
                         <outlet property="spinButton" destination="PA4-MU-Nck" id="gqQ-WO-Hmp"/>
                         <outlet property="spinImageView" destination="PA4-MU-Nck" id="Jl8-LP-rAM"/>
                         <outlet property="takeCarouselButton" destination="tTS-R7-sIX" id="Ihg-yY-oEN"/>

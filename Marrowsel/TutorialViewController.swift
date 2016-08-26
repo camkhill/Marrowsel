@@ -14,6 +14,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var tutorialScrollView: UIScrollView!
     @IBOutlet weak var spinImageView: UIImageView!
     @IBOutlet weak var takeCarouselButton: UIButton!
+    @IBOutlet weak var pageControl: UIPageControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,7 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
         tutorialScrollView.delegate = self
         spinImageView.alpha = 0
         takeCarouselButton.enabled = false
+        pageControl.hidden = false
 
         // Do any additional setup after loading the view.
     }
@@ -35,17 +37,21 @@ class TutorialViewController: UIViewController, UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         // Get the current page based on the scroll offset
         let page : Int = Int(round(tutorialScrollView.contentOffset.x / 320))
-        print(page)
+        
+        pageControl.currentPage = page
+        
         
         if page == 3 {
             takeCarouselButton.enabled = true
             UIImageView.animateWithDuration(0.5, animations: {
                 self.spinImageView.alpha = 1
+            self.pageControl.hidden = true
             })
         } else {
             takeCarouselButton.enabled = false
             UIImageView.animateWithDuration(0.5, animations: {
                 self.spinImageView.alpha = 0
+            self.pageControl.hidden = false
             })
         }
         // Set the current page, so the dots will update
