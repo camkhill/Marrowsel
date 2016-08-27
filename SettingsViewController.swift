@@ -30,6 +30,10 @@ class SettingsViewController: UIViewController {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
