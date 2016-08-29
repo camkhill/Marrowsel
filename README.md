@@ -60,8 +60,8 @@ Time spent: `6-8`
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. The animation of the images falling into place require a function to be called every time the scroll offset changes, which can happen pretty rapidly. I'm curious how much complexity of animations/calculations you can add in swift files before the animations start to lag - could we have done this with something like 100 images with no problem?
+2. I don't totally understand what object "delegates" are, when they are necessary, when you need to add them to the class definition.
 
 ### Video Walkthrough 
 
