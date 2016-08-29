@@ -74,6 +74,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
--Had some trouble with the rotation and scaling of the initial images. What is the difference between "CGAffineTransferScale" and "CGAffineTransferMakeScale"? Seemed that using the "Make" versions would override other transforms - had some trouble getting this to work. Also rotating images changed the x-coordinates.
 
-* Any libraries or borrowed content.
+-Had some trouble with the rotation and scaling of the initial images. What is the difference between "CGAffineTransferScale" and "CGAffineTransferMakeScale"? Seemed that using the "Make" versions would override other transforms - had some trouble getting this to work. Also rotating images changed the x-coordinates. I put some time into it and got one image to rotate and translate, but didn't for the others due to time.
+
+* Any libraries or borrowed content. - N/A
